@@ -1,0 +1,86 @@
+ Create user:
+ 	Syntax: Create user <user_name> identified by <password>;
+
+ Grant user :
+ 	Syntax: Grant connect,resource,dba to < user_name>; 
+
+ commit user :
+ 	syntax:commit;
+
+create table :
+	Syntax: Create table <table_name> (col_name1 datatype1(datasize1), col_name2 datatype2(datasize2), col_name3 datatype3(datasize3));
+
+inserting data into table:
+	Syntax : insert into<table_name>(column_name1,column_name2,column_name3) values(value1,value2,value3);
+
+inserting data into table using address method:
+	Syntax: insert into <table_name> values (&column_name1, &column_name2, &column_name3,&column_name4);
+
+Selecting data from table :
+	Syntax: select * from <table_name>;
+			OR
+			select  column_name1, column_name2, column_name3 from table_name;
+
+Using where :
+	Syntax : select * from <table_name> where <condition>;
+
+using and :
+	Syntax : select * from <table_name> where <condition1> and <condition2> and <condition3>;
+
+Using OR :
+	Syntax: select * from <table_name> where <condition1> or <condition2>;
+
+Using Between :
+	Syntax : select * form <table_name> where <colmn_name> between <lower_bound> and <upper_bound>
+
+Using Not Between :
+	Syntax : select * form <table_name> where <colmn_name> not between <lower_bound> and <upper_bound>
+
+Using in :
+	Syntax : select * from <table_name> where <column_name> in 
+	(value1,value2,value3…valueN);
+
+using not in :
+	Syntax : select * from <table_name> <column_name> not in (value1,value2,value3…valueN);
+
+Using Like :
+	Syntax : select * from <table_name> where <column_name> like <value>;
+
+Using Null :
+	Syntax : select * from <table_name> where  <column_name> is null;
+
+ Using Order By (ascending) :
+ 	Syntax : select * from <table_name> order by <column_name>;
+
+  Using Order By (descending) :
+  	Syntax : select * from <table_name> order by <column_name> desc;
+
+  Updating Data:
+  	Syntax: update <table_name> set column1=value1,column2=value2 where <condition>;
+
+  Deleting data:
+	Syntax: delete <table_name> where <condition>;
+
+Adding new column :
+	Syntax : alter table <table_name>  add  <column_name> datatype;
+
+Remove column :
+	Syntax : alter table <table_name> drop <column_name>;
+
+Renaming column name :
+	Syntax : alter table <table_name>rename column old_column to new_column;
+
+Modify column precision :
+	Syntax; alter table <table_name> modify <column_name datatype>;
+
+Using truncate :
+	Syntax : truncate table  <table_name>;
+
+Using drop :
+	Syntax : drop table <table_name>;
+
+Renaming table name :
+	Syntax : rename <old_table_name> to <new_table_name>;
+
+
+
